@@ -14,4 +14,4 @@ Såhär gör man:
   * Pusha till er branch
   * skapa en pullrequest för er branch
 
-Tveka inte att höra av er till Projektledarna eller Jascha Thiel om något är oklart!
+Tveka inte att höra av er till Projektledarna eller Jascha Thiel om något är oklart!!
