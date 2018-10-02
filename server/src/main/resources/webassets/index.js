@@ -10,6 +10,14 @@ base.mainController = (function() {
         'admin': {
             partial: 'admin/user-admin.html',
             controller: base.userAdminController
+        },
+        'join': {
+            partial: 'join/join.html',
+            controller: base.joinRideController
+        },
+        'create': {
+            partial: 'create/create.html',
+            controller: base.createRideController
         }
     };
 
