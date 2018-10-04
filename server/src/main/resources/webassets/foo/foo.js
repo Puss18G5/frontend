@@ -5,6 +5,14 @@
 var base = base || {};
 // Defines the base namespace, if not already declared. Through this pattern it doesn't matter which order
 // the scripts are loaded in.
+
+function removeThisRow(row){
+      var parent = row.parentNode;
+      parent.removeChild(row);
+}
+
+
+
 base.fooController = function() {
 
     // List of all foo data, will be useful to have when update functionality is added.
@@ -31,12 +39,14 @@ base.fooController = function() {
             tds[0].textContent = foo.payload;
             var d = foo.createdDate;
             tds[1].textContent = d.toLocaleDateString() + ' ' + d.toLocaleTimeString();
-            // TODO: Edit here in lab 1
+
         },
         template: function() {
             return document.getElementById('foo-template');
         }
     };
+
+
 
     var controller = {
         load: function() {

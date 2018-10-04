@@ -2,32 +2,40 @@
   -- This is a partial HTML file, meaning that it will be loaded dynamically and added to another HTML file.
   -- Author: Rasmus Ros, rasmus.ros@cs.lth.se
   -->
-<h1 class="d-sm-block d-none">Your Foos</h1>
-<p><em>Foo</em> is an example of a table display. Each user has separate foos. This example will be expanded upon during
-    the labs.
-</p>
+<h1 class="d-sm-block d-none">My rides</h1>
+
 <div>
     <form id="foo-form">
         <div class="form-group">
-            <label for="foo-input">Add payload </label>
-            <input id="foo-input" class="form-control" type="text" placeholder="Enter here" required>
         </div>
-        <button class="form-control btn btn-primary" type="submit">Submit</button>
     </form>
 </div>
 <div class="mt-5">
     <table class="table" style="background: white">
+
         <thead>
         <tr>
-            <th scope="col">Payload</th>
-            <th>Date</th>
+            <th scope="col">Role</th>
+            <th>Departure location</th>
+            <th>Arrival location</th>
+            <th>Arrival time</th>
+            <th>Departure time</th>
+
+
         </tr>
         </thead>
+
         <tbody>
         <template id="foo-template">
             <tr>
-                <td></td>
-                <td></td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+
+
+                <td><button id="delete-user" type="button" class="w-100 btn btn-danger" onclick = "removeThisRow(this.parentElement.parentElement)">Delete</button></td>
             </tr>
         </template>
         </tbody>
