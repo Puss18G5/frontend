@@ -18,6 +18,10 @@ base.mainController = (function() {
         'create': {
             partial: 'create/create.html',
             controller: base.createRideController
+        },
+        'locations': {
+            partial: 'locations/locations.html',
+            controller: base.locationsController
         }
     };
 
