@@ -6,7 +6,7 @@ base.joinRideController = function() {
         arr_loc: 'Lund',
         dep_time: '11:03',
         arr_time: '12:03',
-        date: 'test',
+        date: '2018-09-10',
         seats: 4
         },
         {
@@ -68,7 +68,7 @@ base.joinRideController = function() {
             var menudiv = document.createElement("div");
             menudiv.className= "dropdown-menu";
 
-            var users = ['Momme (Driver)', 'Hassan', 'Musti']
+            var users = ['Anders (Driver)', 'Gertrud', 'Göran'];
 
             for(var i = 0; i < users.length ; i++) {
                 var h6 = document.createElement("h6");
@@ -101,14 +101,19 @@ base.joinRideController = function() {
         }
     };
 
+    for(var i; i < 100; i++) {
+        var tr = document.createElement("tr");
+        tr.id= i;
+    }
     var controller = {
         load: function () {
             var select_from = document.getElementById("select-from");
             var select_to = document.getElementById("select-to");
             var myobject = {
-                Angered : 'Angered',
-                Rinkeby : 'Rinkeby',
-                Rosengård : 'Rosengård'
+                Malmö : 'Malmö',
+                Lund : 'Lund',
+                Stockholm : 'Stockholm',
+                Göteborg : 'Göteborg'
             }
             for(index in myobject) {
                 select_to.options[select_to.options.length] = new Option(myobject[index], index);

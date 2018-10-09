@@ -32,7 +32,7 @@ base.loginController = (function() {
                     $(".modaltoggle").attr("data-toggle", "modal");
                     $(".modaltoggle").attr("data-target", "#create-acc");
                 } else {
-                    var role = 'NONE';
+                    var role = 'USER';
                     var credentials = {username, password, role};
                     base.rest.addUser(credentials);
                     base.rest.login(username, password, false).then(function(response){
